@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Tarifa</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Cálculo de Tarifa</h2>
+    <p>Valor da Tarifa normal: R$ 2,50</p>
+   <form>
+    <label for="tarifaOptions">Selecione as opções:</label>
+    <select id="tarifaOptions" name="selectedOption">
+        <option value="idade">Menor de 6 anos</option>
+        <option value="estudante">Estudante</option>
+        <option value="idoso">Idoso</option>
+    </select>
+    </form>
+    <button type="submit" onclick="calculateFee()">Submit</button>
+
+    <p>Preço da tarifa</p>
+    <p id="result"></p>
+    
+
+</body>
+</html>
